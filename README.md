@@ -25,27 +25,50 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+Rick : The mortgage formula
+Thomas: Scroll View
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+Rick: Mortgage Formula.
+Thomas: Optional text fields
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    var taxes: Double = 0
+    
+    if let taxesString = taxesTextField.text,
+        let userTaxes = Double(taxesString) {
+        taxes = userTaxes
+    }
+    
+    var insurance: Double = 0
+    
+    if let insuranceString = insuranceTextField.text,
+        let userInsurance = Double(insuranceString) {
+        insurance = userInsurance
+    }
+    
+    var HOA: Double = 0
+    
+    if let HOAString = HOATextField.text,
+        let userHOA = Double(HOAString) {
+        HOA = userHOA
+    }
+    
+    This piece of the code was a challenge that me and Rick worked on for most of the afternoon, in the end we needed our faithful instructor Ben's extensive help, but his solution proved to be similar to the direction we were going in. We were both worried that we were a lot farther off than we were.
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+Do you have a house you want to buy, that you want to get a mortgage on (negotiate a payment structure over a certain period of time?). Our app allows you to do it in 3 easy steps, and even calculate additional fees over time such as taxes, insurance and HOA  
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    Calculator
   
 6. What are you future goals?
 
-    `<Your answer here>`
+Create stored data so you can have persistent calculations
 
 ## Required Slides (Add your Keynote to your PR)
 
